@@ -1,7 +1,8 @@
 public class ForLoop {
     public static void main(String[] args) {
-        for (int i = 1; i <10; i++){
-            System.out.println(i);
+        for (int x = 10; x < 20; x = x + 1) {
+            System.out.println("value of x: " + x);
+            System.out.println("\n");
         }
     }
 }
