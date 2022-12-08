@@ -1,18 +1,16 @@
+import java.util.Scanner;
 public class FibonacciCalc {
-    static void fibonacci(int f) {
-        int x = 0;
-        int y = 1;
-        int z;
-        while (f > 0) {
-            System.out.println(x);
-            z = x + y;
-            x = y;
-            y = z;
-            f--;
-        }
+    public static long fibonacci(int i) {
+        if (i <= 1)
+            return i;
+        return fibonacci(i - 1) + fibonacci(i - 2);
     }
+
     public static void main(String[] args) {
-        fibonacci(100);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many results?");
+        int res = sc.nextInt();
+        for (int i = 0; i <= res; i++)
+            System.out.println(fibonacci(i));
     }
 }
-
