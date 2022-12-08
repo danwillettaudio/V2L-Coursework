@@ -1,5 +1,5 @@
 public class FibonacciCalc {
-    public static int fibonacci(int f) {
+    static void fibonacci(int f) {
         int x = 0;
         int y = 1;
         int z;
@@ -10,10 +10,9 @@ public class FibonacciCalc {
             y = z;
             f--;
         }
-        return x;
     }
     public static void main(String[] args) {
-        fibonacci(50);
+        fibonacci(100);
     }
 }
 
